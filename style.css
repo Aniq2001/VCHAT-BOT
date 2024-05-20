@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #4F4F4F; /* Light gray for a clean background */
+  font-family: sans-serif; /* Default font for consistency */
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333; /* Darker text color for better readability */
+  padding: 12px 16px; /* Increased padding for spacing */
+  border-bottom: 1px solid #DFE3E8; /* Subtle gray border */
+  background-color: #E7E7E7; /* Light gray background for contrast */
+}
+
+.header h3 {
+  font-size: 18px; /* Slightly larger font for header */
+  font-weight: 500;
+  margin: 0; /* Remove default margin */
+}
+
+.container {
+  max-width: 920px; /* Maintain maximum width */
+  min-height: calc(100vh - 45px); /* Account for header height */
+  display: flex; /* Allow for vertical or horizontal layout flexibility */
+  flex-direction: column; /* Default to a vertical layout */
+  justify-content: space-between; /* Distribute content vertically */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 16px; /* Add some padding for internal content */
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 20;
+}
+
+.info a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.info a:hover{
+    color: #4caf50;
+}
+
+.gemini-input-container {
+  background-color: #F0F2F7; /* Light gray background */
+  padding: 12px 16px; /* Increased padding for better spacing */
+  display: flex; /* Enables horizontal arrangement of elements */
+  justify-content: space-between; /* Distributes content horizontally */
+  border-top: 1px solid #DFE3E8; /* Subtle gray border */
+  border-bottom: 1px solid #DFE3E8; /* Adds bottom border for a complete container */
+  border-radius: 4px; /* Rounded corners for a modern look */
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05); /* Subtle inset shadow for depth */
+  position: sticky; /* Sticks to the bottom when scrolled */
+  bottom: 0; /* Positions at the bottom of the viewport */
+  z-index: 10; /* Ensures the container stays on top of other elements */
+}
+
+.gemini-input-container input[type="text"],
+.gemini-input-container input[type="email"],
+.gemini-input-container input[type="password"] {
+  background-color: transparent; /* Transparent background for a seamless look */
+  border: none; /* Removes default browser border */
+  outline: none; /* Removes default outline */
+  font-size: 16px; /* Consistent font size with Gemini */
+  color: #333; /* Darker text color for better readability */
+  padding: 8px 0; /* Adjusts padding for alignment within the container */
+  width: 100%; /* Stretches to fill the container horizontally */
+  transition: all 0.2s ease-in-out; /* Smooth transition effects */
+}
+
+.gemini-input-container input[type="text"]:focus,
+.gemini-input-container input[type="email"]:focus,
+.gemini-input-container input[type="password"]:focus {
+  border-bottom: 2px solid #2684FF; /* Blue underline on focus for interaction feedback */
+}
+}
+
+##user-input {
+  background-color: #333; /* Dark gray background */
+  color: #fff; /* White text for better readability */
+  border: none;
+  outline: none;
+  padding: 8px 12px; /* Increased padding for comfort */
+  flex: 9;
+  font-size: 16px; /* Slightly larger font size for better legibility */
+  font-weight: 400;
+  border-radius: 5px;
+}
+
+#user-input::placeholder {
+  color: #ccc; /* Lighter gray placeholder text */
+  font-weight: 400;
+}
+
+#send-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  cursor: pointer;
+  margin-left: 15px;
+  transition: all 0.3s ease;
+}
+
+#send-button:hover {
+  background-color: #222; /* Slightly darker black on hover for feedback */
+}
+
+.chat-container {
+  flex: 1;
+  background-color: #222; /* Darker background for chat container */
+  color: #eee; /* Light gray text for chat messages */
+  overflow-y: scroll; /* Enable scrolling for long chat logs */
+  padding: 10px; /* Add some padding inside the chat container */
+}
+
+.chat-box {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid #444; /* Light border to separate messages */
+}
+
+#chat-log {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+#chat-log i {
+  margin-right: 10px;
+  color: #007bff; /* Blue icon color for sender/receiver differentiation */
+  border-radius: 5px;
+}
+
+.bot,
+.user {
+  display: flex;
+  align-items: flex-start;
+  color: #eee;
+  width: 100%;
+  padding: 15px 7px 15px 10px; /* Adjust padding for icons */
+  border-radius: 6px;
+  margin-bottom: 10px; /* Add spacing between messages */
+}
+
+.bot {
+  background-color: #333; /* Darker gray background for bot messages */
+}
+
+#chat-log #user-icon i {
+  background-color: #19c37d; /* Green icon color for user messages */
+  padding: 10px 11px;
+}
+
+#chat-log #bot-icon i {
+  background-color: #9859b7; /* Purple icon color for bot messages */
+  padding: 10px 8px 11px;
+}
