@@ -3,7 +3,7 @@ const chatInput = document.getElementById("user-input");
 const sendChatBtn = document.getElementById("send-button");
 
 let userMessage = null; // Variable to store user's message
-const API_KEY = "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";
+const API_KEY = "";
 const inputInitHeight = chatInput.scrollHeight;
 
 // Function to create a chat list item
